@@ -1,0 +1,38 @@
+@use "../../styles/variables" as *;
+
+.header {
+  padding: 0 80px;
+  background-color: #fff;
+}
+
+.benefitsBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 119px;
+  margin: 6px 0;
+}
+
+.benefitsItem {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  & p {
+    margin: 1px 0;
+    color: $gray-light;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  & span {
+    color: $blue;
+    font-weight: 600;
+  }
+}
+
+.line {
+  height: 1px;
+  width: 100%;
+  background-color: #f0f0f0;
+}
