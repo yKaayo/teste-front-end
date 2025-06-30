@@ -1,0 +1,31 @@
+@use "../../styles/variables" as *;
+
+.categories {
+  display: flex;
+  justify-content: center;
+  gap: 42px;
+  margin: 39px 0 90px 0;
+
+  &__category {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+
+    &-icon {
+      height: 128px;
+      width: 128px;
+      padding: 34px;
+      border-radius: 10px;
+      box-shadow: 0 2px 9px 0 #00000022;
+    }
+
+    & p {
+      text-align: center;
+    }
+
+    &--active {
+      color: $blue;
+      font-weight: 600;
+    }
+  }
+}

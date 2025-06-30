@@ -1,4 +1,5 @@
 // Layout
+import BuyByCategory from "./layout/BuyByCategory";
 import Header from "./layout/Header";
 import Hero from "./layout/Hero";
 import Newsletter from "./layout/Newsletter";
@@ -8,6 +9,7 @@ const App = () => {
     <>
       <Header />
       <Hero />
+      <BuyByCategory />
       <Newsletter />
     </>
   );
