@@ -1,4 +1,4 @@
-@use "../../styles/variables" as *;
+@use "../../styles/styles.scss" as *;
 
 .newsletter {
   display: flex;
@@ -44,10 +44,16 @@
       }
     }
 
-    & label {
+    &-terms {
+      display: flex;
+      align-items: center;
+      gap: 4px;
       margin-top: 8px;
-      color: $white;
-      font-size: 14px;
+
+      & label {
+        color: $white;
+        font-size: 14px;
+      }
     }
   }
 }

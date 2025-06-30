@@ -1,4 +1,4 @@
-import { useState } from "react";
+// Styles
 import styles from "./styles.module.scss";
 
 // Icons
@@ -11,16 +11,14 @@ import race from "../../assets/icons/race.svg";
 import fashion from "../../assets/icons/fashion.svg";
 
 const BuyByCategory = () => {
-  const [selectedCategory, setSelectedCategory] = useState<number | null>(null);
-
   const categories = [
-    { text: "Tecnologia", icon: devices },
-    { text: "Supermercado", icon: supermarket },
-    { text: "Bebidas", icon: whiskey },
-    { text: "Ferramentas", icon: tools },
-    { text: "Saúde", icon: health },
-    { text: "Esportes e Fitness", icon: race },
-    { text: "Moda", icon: fashion },
+    { text: "Tecnologia", icon: devices, active: true },
+    { text: "Supermercado", icon: supermarket, active: false },
+    { text: "Bebidas", icon: whiskey, active: false },
+    { text: "Ferramentas", icon: tools, active: false },
+    { text: "Saúde", icon: health, active: false },
+    { text: "Esportes e Fitness", icon: race, active: false },
+    { text: "Moda", icon: fashion, active: false },
   ];
 
   return (
@@ -30,12 +28,8 @@ const BuyByCategory = () => {
           href="#"
           key={i}
           className={`${styles["categories__category"]} ${
-            selectedCategory === i ? styles["categories__category--active"] : ""
+            category.active ? styles["categories__category--active"] : ""
           }`}
-          onClick={(e) => {
-            e.preventDefault();
-            setSelectedCategory(i);
-          }}
         >
           <div className={styles["categories__category-icon"]}>
             <img src={category.icon} alt={category.text} />

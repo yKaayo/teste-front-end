@@ -1,0 +1,43 @@
+@use "../../styles/styles.scss" as *;
+
+.card {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  height: 350px;
+  width: 100%;
+  border-radius: 20px;
+  background-image: url(../../assets/images/partner.webp);
+
+  &__text {
+    position: relative;
+    z-index: 1;
+    margin-left: 44px;
+    margin-bottom: 40px;
+
+    & h3 {
+      color: $white;
+      font-size: 40px;
+      font-weight: 700;
+    }
+
+    & p {
+      margin-top: 8px;
+      margin-bottom: 32px;
+      color: $white;
+    }
+  }
+
+  &__gradient {
+    position: absolute;
+    height: 75%;
+    width: 100%;
+    border-radius: 20px;
+    background: #000000;
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 0, 0, 0) 85%
+    );
+  }
+}

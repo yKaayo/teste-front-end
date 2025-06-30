@@ -1,4 +1,4 @@
-@use "../../styles/variables" as *;
+@use "../../styles/styles.scss" as *;
 
 .header {
   padding: 0 80px;
@@ -28,12 +28,6 @@
       color: $blue;
       font-weight: 600;
     }
-  }
-
-  &__divisor {
-    height: 1px;
-    width: 100%;
-    background-color: #f0f0f0;
   }
 
   &__navbar {

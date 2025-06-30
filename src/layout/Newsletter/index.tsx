@@ -30,8 +30,10 @@ const Newsletter = () => {
           <button>Inscrever</button>
         </div>
 
-        <input id="terms" type="checkbox" required />
-        <label htmlFor="terms">Aceito os termos e condições</label>
+        <div className={styles["newsletter__form-terms"]}>
+          <input id="terms" type="checkbox" required />
+          <label htmlFor="terms">Aceito os termos e condições</label>
+        </div>
       </form>
     </section>
   );

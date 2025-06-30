@@ -77,7 +77,7 @@ const Header = () => {
         ))}
       </div>
 
-      <div className={styles["header__divisor"]}></div>
+      <div className={styles["divisor"]}></div>
 
       <div className={styles["header__navbar"]}>
         <a href="#" className={styles["header__navbar-logo"]}>
@@ -110,7 +110,7 @@ const Header = () => {
         </nav>
       </div>
 
-      <div className={styles["header__divisor"]}></div>
+      <div className={styles["divisor"]}></div>
 
       <div className={styles["header__filters"]}>
         {filters.map((filter, i) => (

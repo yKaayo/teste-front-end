@@ -1,0 +1,53 @@
+@use "../../styles/styles.scss" as *;
+
+.showcase {
+  display: flex;
+  flex-direction: column;
+  padding: 0 80px;
+
+  &__title {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+    margin-bottom: 4px;
+    padding: 0 150px;
+
+    & h2 {
+      color: $blue;
+      font-size: 30px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+  }
+
+  &__tags {
+    display: flex;
+    justify-content: space-between;
+
+    &-tag {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 12px 0;
+      width: 100%;
+      border: 1px #bdbdbd solid;
+      text-align: center;
+
+      &--active {
+        color: $blue;
+        font-weight: 700;
+      }
+    }
+  }
+
+  &__all-tags {
+    margin: 0 auto;
+    color: $gray-dark;
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+  &__products {
+    display: flex;
+  }
+}

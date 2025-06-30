@@ -1,0 +1,57 @@
+@use "../../styles/styles.scss" as *;
+
+.carousel {
+  position: relative;
+  width: 100%;
+
+  &__wrapper {
+    overflow: hidden;
+
+    &__track {
+      display: flex;
+      gap: 18px;
+      margin-top: 24px;
+      margin-bottom: 90px;
+      padding: 0 .8rem;
+      transition: transform 0.3s ease-in-out;
+      width: 100%;
+
+      &-item {
+        flex: 0 0 23.92%;
+        box-sizing: border-box;
+        text-align: center;
+        background-color: $white;
+      }
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 32px;
+    width: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border-radius: 100%;
+    cursor: pointer;
+    z-index: 1;
+    box-shadow: 0 4px 4px 0 #00000025;
+
+    & img {
+      height: 12.8px;
+      width: 7.47px;
+    }
+
+    &-prev {
+      left: -47px;
+    }
+
+    &-next {
+      right: -47px;
+      transform: scaleX(-1);
+    }
+  }
+}

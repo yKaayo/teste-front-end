@@ -5,6 +5,10 @@
   font-family: "Poppins";
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 ul {
   list-style: none;
 }
@@ -19,6 +23,7 @@ a {
   color: $gray-light;
 }
 
-input, button {
+input,
+button {
   border: 0;
 }

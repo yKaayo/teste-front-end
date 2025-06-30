@@ -1,0 +1,8 @@
+@use "../../styles/styles.scss" as *;
+
+.btn {
+  border-radius: 5px;
+  color: $purple;
+  background-color: $yellow;
+  font-weight: 600;
+}
