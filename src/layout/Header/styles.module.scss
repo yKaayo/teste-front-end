@@ -3,36 +3,108 @@
 .header {
   padding: 0 80px;
   background-color: #fff;
-}
 
-.benefitsBar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 119px;
-  margin: 6px 0;
-}
-
-.benefitsItem {
-  display: flex;
-  align-items: center;
-  gap: 9px;
-
-  & p {
-    margin: 1px 0;
-    color: $gray-light;
-    font-size: 12px;
-    font-weight: 500;
+  &__benefits-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 768px;
+    margin: 6px auto;
   }
 
-  & span {
-    color: $blue;
-    font-weight: 600;
-  }
-}
+  &__benefit-item {
+    display: flex;
+    align-items: center;
+    gap: 9px;
 
-.line {
-  height: 1px;
-  width: 100%;
-  background-color: #f0f0f0;
+    & p {
+      margin: 1px 0;
+      color: $gray-light;
+      font-size: 12px;
+      font-weight: 500;
+    }
+
+    &-highlight {
+      color: $blue;
+      font-weight: 600;
+    }
+  }
+
+  &__divisor {
+    height: 1px;
+    width: 100%;
+    background-color: #f0f0f0;
+  }
+
+  &__navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 72px;
+    width: 100%;
+
+    &-logo {
+      position: absolute;
+      left: 0;
+    }
+
+    &-search {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      width: 630px;
+      margin: 0 auto;
+
+      &-input {
+        height: 48px;
+        width: 100%;
+        padding: 0 0 0 16px;
+        background-color: #f6f5f2;
+        border-radius: 10px;
+        font-size: 14px;
+        font-weight: 500;
+      }
+
+      &-icon {
+        position: absolute;
+        right: 24px;
+      }
+    }
+
+    &-nav {
+      position: absolute;
+      right: 0;
+
+      &-icons {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+      }
+    }
+  }
+
+  &__filters {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 70px;
+    box-shadow: 0 8px 16px 0 #39301312;
+
+    &-link {
+      display: flex;
+      align-items: center;
+      font-weight: 600;
+      transition: 300ms;
+
+      & span {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      &:hover {
+        color: $blue;
+      }
+    }
+  }
 }

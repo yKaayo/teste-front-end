@@ -1,0 +1,53 @@
+@use "../../styles/variables" as *;
+
+.newsletter {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 80px;
+  background-color: $purple;
+
+  &__text {
+    & h3 {
+      color: $white;
+      font-size: 32px;
+      font-family: "Outfit";
+      font-weight: 600;
+    }
+
+    & p {
+      width: 80%;
+      color: $white;
+      font-size: 14px;
+      font-weight: 300;
+    }
+  }
+
+  &__form {
+    &_main {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      &_input-text {
+        padding: 12px 24px;
+        border-radius: 8px;
+      }
+
+      & button {
+        padding: 15px 40px;
+        color: #161615;
+        background-color: $yellow;
+        border-radius: 8px;
+        font-size: 14px;
+        font-weight: 600;
+        cursor: pointer;
+      }
+    }
+
+    & label {
+      margin-top: 8px;
+      color: $white;
+      font-size: 14px;
+    }
+  }
+}

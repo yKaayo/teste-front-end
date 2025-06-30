@@ -1,3 +1,50 @@
-.hero {
+@use "../../styles/variables" as *;
 
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  background-image: url(../../assets/images/heroImg.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &__text {
+    padding: 78px 0 55px 80px;
+    width: 65%;
+    background-image: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 0, 0, 0) 85%
+    );
+    line-height: 50px;
+
+    & h2 {
+      color: $white;
+      text-align: balance;
+      font-size: 48px;
+      font-weight: 600;
+    }
+
+    & p {
+      margin-top: 16px;
+      margin-bottom: 41px;
+      color: $white;
+      font-size: 32px;
+
+      & span {
+        color: $yellow;
+        font-weight: 700;
+      }
+    }
+
+    & a {
+      padding: 12.5px 49px;
+      border-radius: 5px;
+      color: $purple;
+      background-color: $yellow;
+      font-weight: 600;
+    }
+  }
 }

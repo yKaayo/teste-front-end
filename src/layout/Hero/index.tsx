@@ -1,13 +1,16 @@
 // Styles
 import styles from "./styles.module.scss";
 
-// Image
-import heroImg from "../../assets/images/heroImg.png";
-
 const Hero = () => {
   return (
     <main className={styles.hero}>
-      <img src={heroImg} alt="" aria-hidden="true" />
+      <div className={styles["hero__text"]}>
+        <h2>Venha conhecer nossas promoções</h2>
+        <p>
+          <span>50% Off</span> nos produtos
+        </p>
+        <a href="#">Ver produto</a>
+      </div>
     </main>
   );
 };
