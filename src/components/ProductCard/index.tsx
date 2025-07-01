@@ -9,24 +9,23 @@ import { formatCurrency } from "../../utils/formatCurrency";
 
 interface CardProps {
   product: Product;
-  key: number;
 }
 
-const ProductCard = ({ product, key }: CardProps) => {
-  console.log(product);
-
+const ProductCard = ({ product }: CardProps) => {
   return (
-    <div key={key} className={styles.card}>
-      <img src={product.photo} alt="" />
+    <article className={styles.card}>
+      <img src={product.photo} alt={product.productName} />
 
       <h3>{product.productName}</h3>
       <p className={styles["card__price"]}>{formatCurrency(product.price)}</p>
-      <p className={styles["card__discount"]}>ou 2x de {formatCurrency(product.price / 2)} sem juros</p>
+      <p className={styles["card__discount"]}>
+        ou 2x de {formatCurrency(product.price / 2)} sem juros
+      </p>
 
       <p className={styles["card__shipping"]}>Frete grátis</p>
 
-      <button>Comprar</button>
-    </div>
+      <div>Comprar</div>
+    </article>
   );
 };
 

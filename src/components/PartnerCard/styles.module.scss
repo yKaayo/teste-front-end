@@ -1,4 +1,4 @@
-@use "../../styles/styles.scss" as *;
+@use "../../styles/variables" as *;
 
 .card {
   position: relative;
@@ -22,8 +22,10 @@
     }
 
     & p {
+      width: 80%;
       margin-top: 8px;
       margin-bottom: 32px;
+      text-wrap: balance;
       color: $white;
     }
   }

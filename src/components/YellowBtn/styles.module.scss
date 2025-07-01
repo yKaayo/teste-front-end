@@ -1,8 +1,15 @@
-@use "../../styles/styles.scss" as *;
+@use "../../styles/variables" as *;
 
 .btn {
   border-radius: 5px;
   color: $purple;
   background-color: $yellow;
   font-weight: 600;
+  border: 2px solid $yellow;
+  transition: all 300ms;
+
+  &:hover {
+    color: $yellow;
+    background-color: transparent;
+  }
 }

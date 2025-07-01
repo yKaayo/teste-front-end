@@ -1,4 +1,4 @@
-@use "../../styles/styles.scss" as *;
+@use "../../styles/variables" as *;
 
 .card {
   display: flex;
@@ -10,6 +10,7 @@
   background-color: $white;
   box-shadow: 0 3px 19px 0 #00000022;
   color: $gray-dark;
+
 
   & h3 {
     font-size: 15px;
@@ -33,7 +34,7 @@
     font-size: 12px;
   }
 
-  & button {
+  & div {
     margin-top: 12px;
     padding: 13px 0;
     width: 100%;
@@ -42,7 +43,6 @@
     font-size: 14px;
     background-color: $blue;
     border: 2px $blue solid;
-    cursor: pointer;
     transition: 300ms;
 
     &:hover {

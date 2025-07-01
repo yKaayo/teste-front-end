@@ -11,7 +11,13 @@ const Hero = () => {
           <span>50% Off</span> nos produtos
         </p>
 
-        <YellowBtn paddingX={49} paddingY={12.5} text={"Ver produto"} weight={600} />
+        <YellowBtn
+          paddingX={49}
+          paddingY={12.5}
+          text={"Ver produto"}
+          weight={600}
+          fontSize={16}
+        />
       </div>
     </main>
   );

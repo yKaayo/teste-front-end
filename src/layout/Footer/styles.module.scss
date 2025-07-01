@@ -1,0 +1,81 @@
+@use "../../styles/variables" as *;
+
+.footer {
+  display: flex;
+  flex-direction: column;
+
+  &__main {
+    display: flex;
+    gap: 90px;
+    padding: 42px 80px;
+    background-color: #f4f4f4;
+
+    &__branding {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      &-logo {
+        height: 48px;
+        margin-bottom: 18px;
+      }
+
+      & p {
+        color: $gray-dark;
+        font-weight: 300;
+      }
+
+      &__icons {
+        display: flex;
+        align-items: center;
+        margin-top: 27px;
+        gap: 26px;
+      }
+    }
+
+    &__line {
+      min-height: 100%;
+      min-width: 1px;
+      background-color: #28282818;
+    }
+
+    &__links {
+      display: flex;
+      justify-content: flex-start;
+      gap: 100px;
+
+      &__col {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        & h3 {
+          color: $gray-dark;
+          font-weight: 700;
+        }
+
+        & ul {
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+
+          & li {
+            color: #22222271;
+            font-family: "Work sans";
+            white-space: nowrap;
+          }
+        }
+      }
+    }
+  }
+
+  &__credits {
+    padding: 13px 0;
+    width: 100%;
+    text-align: center;
+    color: $gray-dark;
+    font-size: 13px;
+    font-weight: 300;
+    background-color: $white;
+  }
+}

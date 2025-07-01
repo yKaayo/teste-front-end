@@ -1,4 +1,4 @@
-@use "../../styles/styles.scss" as *;
+@use "../../styles/variables" as *;
 
 .newsletter {
   display: flex;
@@ -29,18 +29,9 @@
       gap: 8px;
 
       &_input-text {
+        font-size: 14px;
         padding: 12px 24px;
         border-radius: 8px;
-      }
-
-      & button {
-        padding: 15px 40px;
-        color: #161615;
-        background-color: $yellow;
-        border-radius: 8px;
-        font-size: 14px;
-        font-weight: 600;
-        cursor: pointer;
       }
     }
 

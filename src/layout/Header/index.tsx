@@ -66,6 +66,25 @@ const Header = () => {
     },
   ];
 
+  const navIcons = [
+    {
+      icon: box,
+      text: "Comprados",
+    },
+    {
+      icon: heart,
+      text: "Favoritos",
+    },
+    {
+      icon: userCircle,
+      text: "Perfil",
+    },
+    {
+      icon: shoppingCart,
+      text: "Carrinho",
+    },
+  ];
+
   return (
     <header className={styles.header}>
       <div className={styles["header__benefits-bar"]}>
@@ -81,7 +100,9 @@ const Header = () => {
 
       <div className={styles["header__navbar"]}>
         <a href="#" className={styles["header__navbar-logo"]}>
-          <img src={logo} alt="Econverse" />
+          <h1>
+            <img src={logo} alt="Econverse" />
+          </h1>
         </a>
 
         <div className={styles["header__navbar-search"]}>
@@ -92,19 +113,19 @@ const Header = () => {
           />
           <img
             src={magnifyingGlass}
-            alt=""
+            alt="Buscar"
             className={styles["header__navbar-search-icon"]}
           />
         </div>
 
         <nav className={styles["header__navbar-nav"]}>
           <ul className={styles["header__navbar-nav-icons"]}>
-            {[box, heart, userCircle, shoppingCart].map((icon, i) => (
-              <a key={i} href="#">
-                <li>
-                  <img src={icon} alt="" />
-                </li>
-              </a>
+            {navIcons.map((icon, i) => (
+              <li key={i}>
+                <a href="#">
+                  <img src={icon.icon} alt={icon.text} />
+                </a>
+              </li>
             ))}
           </ul>
         </nav>
@@ -119,7 +140,8 @@ const Header = () => {
               filter
             ) : (
               <span>
-                <img src={filter.icon} alt="" /> {filter.text}
+                <img src={filter.icon} alt="" aria-hidden="true" />{" "}
+                {filter.text}
               </span>
             )}
           </a>

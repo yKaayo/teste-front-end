@@ -9,7 +9,13 @@ const PartnerCard = () => {
         <h3>Parceiros</h3>
         <p>Lorem ipsum dolor sit amet, consectetur</p>
 
-        <YellowBtn paddingX={26} paddingY={12} text="CONFIRA" weight={700} />
+        <YellowBtn
+          paddingX={26}
+          paddingY={12}
+          text="CONFIRA"
+          weight={700}
+          fontSize={16}
+        />
       </div>
 
       <div className={styles["card__gradient"]}></div>

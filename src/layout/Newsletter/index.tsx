@@ -1,4 +1,5 @@
 // Styles
+import YellowBtn from "../../components/YellowBtn";
 import styles from "./styles.module.scss";
 
 const Newsletter = () => {
@@ -27,7 +28,13 @@ const Newsletter = () => {
             required
           />
 
-          <button>Inscrever</button>
+          <YellowBtn
+            paddingX={40}
+            paddingY={12}
+            text="INSCREVER"
+            weight={600}
+            fontSize={14}
+          />
         </div>
 
         <div className={styles["newsletter__form-terms"]}>
