@@ -14,7 +14,7 @@ interface CardProps {
 const ProductCard = ({ product }: CardProps) => {
   return (
     <article className={styles.card}>
-      <img src={product.photo} alt={product.productName} />
+      <img src={product.photo} alt={product.productName} loading="lazy" />
 
       <h3>{product.productName}</h3>
       <p className={styles["card__price"]}>{formatCurrency(product.price)}</p>

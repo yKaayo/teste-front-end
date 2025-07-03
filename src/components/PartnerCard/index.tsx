@@ -14,7 +14,6 @@ const PartnerCard = () => {
           paddingY={12}
           text="CONFIRA"
           weight={700}
-          fontSize={16}
         />
       </div>
 

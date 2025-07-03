@@ -21,7 +21,7 @@ const Carousel = ({ products }: CarouselProps) => {
   const trackRef = useRef<HTMLDivElement>(null);
 
   // Modal
-  const [modalIsOpen, setModalIsOpen] = useState(true);
+  const [modalIsOpen, setModalIsOpen] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
 
   const handleSlide = (direction: number) => {
@@ -40,7 +40,6 @@ const Carousel = ({ products }: CarouselProps) => {
     setModalIsOpen(true);
   };
 
-  // Função para fechar o modal
   const handleCloseModal = () => {
     setModalIsOpen(false);
     setSelectedProduct(null);
@@ -83,11 +82,7 @@ const Carousel = ({ products }: CarouselProps) => {
       </button>
 
       {modalIsOpen && selectedProduct && (
-        <ProductModal
-          product={selectedProduct}
-          isOpen={modalIsOpen}
-          onClose={handleCloseModal}
-        />
+        <ProductModal product={selectedProduct} onClose={handleCloseModal} />
       )}
     </div>
   );

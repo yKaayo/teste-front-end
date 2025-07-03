@@ -2,26 +2,31 @@
 import styles from "./styles.module.scss";
 
 interface YellowBtnProps {
-  paddingX: number;
-  paddingY: number;
+  width?: string;
+  paddingX?: number;
+  paddingY?: number;
   text: string;
-  weight: number;
-  fontSize: number;
+  weight?: number;
+  fontSize?: number;
 }
 
 const YellowBtn = ({
+  width,
   paddingX,
   paddingY,
   text,
-  weight,
-  fontSize,
+  weight = 400,
+  fontSize = 16,
 }: YellowBtnProps) => {
   return (
     <a
       href="#"
       className={styles.btn}
       style={{
-        padding: `${paddingY}px ${paddingX}px`,
+        width: width,
+        padding: `${typeof paddingY === "number" ? `${paddingY}px` : ""} ${
+          typeof paddingX === "number" ? `${paddingX}px` : ""
+        }`,
         fontWeight: weight,
         fontSize: `${fontSize}px`,
       }}

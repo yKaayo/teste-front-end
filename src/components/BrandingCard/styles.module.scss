@@ -1,9 +1,13 @@
 @use "../../styles/variables" as *;
 
 .card {
+  border-radius: 50%;
+  box-shadow: 0 7px 20px 0 #00000013;
+  overflow: hidden;
+  
+  & img {
     padding: 0 47px;
     height: 200px;
     width: 200px;
-    border-radius: 50%;
-    box-shadow: 0 7px 20px 0 #00000013;
+  }
 }

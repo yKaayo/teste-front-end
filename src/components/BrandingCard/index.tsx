@@ -7,7 +7,11 @@ interface BrandingCardProps {
 }
 
 const BrandingCard = ({ logo, text }: BrandingCardProps) => {
-  return <img className={styles.card} src={logo} alt={text} />;
+  return (
+    <a className={styles.card} href="#">
+      <img src={logo} alt={text} loading="lazy" />
+    </a>
+  );
 };
 
 export default BrandingCard;

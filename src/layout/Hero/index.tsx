@@ -14,9 +14,8 @@ const Hero = () => {
         <YellowBtn
           paddingX={49}
           paddingY={12.5}
-          text={"Ver produto"}
+          text="Ver produto"
           weight={600}
-          fontSize={16}
         />
       </div>
     </main>
